@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Pricing component with toggle</title>
+  <link rel="stylesheet" href="./main.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <!-- Title -->
+      <h1 class="pricing-title">Our Pricing</h1>
+      <!-- Pricing setup -->
+      <label for="pricing" class="pricing-setup" aria-label="Toggle to switch price">
+        <span class="pricing-text annually">Annually</span>
+        <input type="checkbox" name="pricing" id="pricing" role="switch" checked>
+        <span class="pricing-switch"></span>
+        <span class="pricing-text monthly">Monthly</span>
+      </label>
+      <!-- Pricing cards wrapper -->
+      <div class="pricing-cards-wrapper">
+        <!-- Pricing card -->
+        <article class="pricing-card">
+          <h3 class="pricing-card-title">Basic</h3>
+          <div class="price-wrapper">
+            <span>$</span>
+            <p class="price" id="basicPrice">19.99</p>
+            <!-- (199.99) -->
+          </div>
+          <ul class="pricing-card-features-list">
+            <li class="feature-item">500 GB Storage</li>
+            <li class="feature-item">2 Users Allowed</li>
+            <li class="feature-item">Send up to 3 GB</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Learn more</a>
+        </article>
+        <!-- Pricing card -->
+        <article class="pricing-card main-card">
+          <h3 class="pricing-card-title">Professional</h3>
+          <div class="price-wrapper">
+            <span>$</span>
+            <p class="price" id="professionalPrice">24.99</p>
+            <!-- (249.99) -->
+          </div>
+          <ul class="pricing-card-features-list">
+            <li class="feature-item">1 TB Storage</li>
+            <li class="feature-item">5 Users Allowed</li>
+            <li class="feature-item">Send up to 10 GB</li>
+          </ul>
+          <a href="#" class="btn btn-light">Learn more</a>
+        </article>
+        <!-- Pricing card -->
+        <article class="pricing-card">
+          <h3 class="pricing-card-title">Master</h3>
+          <div class="price-wrapper">
+            <span>$</span>
+            <p class="price" id="masterPrice">39.99</p>
+            <!-- (399.99) -->
+          </div>
+          <ul class="pricing-card-features-list">
+            <li class="feature-item">2 TB Storage</li>
+            <li class="feature-item">10 Users Allowed</li>
+            <li class="feature-item">Send up to 20 GB</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Learn more</a>
+        </article>
+      </div>
+    </div>
+  </main>
+  
+  <!-- Abstract patterns -->
+  <img src="./images/bg-top.svg" alt="abstract line pattern in top right corner" class="top-pattern">
+  <img src="./images/bg-bottom.svg" alt="abstract line pattern in bottom left corner" class="bottom-pattern">
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Zuzana83/pricing-cards-w-toggle" target="_blank">z83studio</a>.
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
